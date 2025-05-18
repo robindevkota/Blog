@@ -39,7 +39,7 @@ mongoose.connect(process.env.MONGODB_CONN, { dbName: 'yt-mern-blog' })
     .catch(err => console.log('Database connection failed.', err))
 
 app.listen(PORT, () => {
-    console.log('Server running on port:', PORT)
+    console.log('Server running on port:', PORT || 5000)
 })
 
 
