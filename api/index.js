@@ -17,10 +17,10 @@ const app = express()
 
 app.use(cookieParser())
 app.use(express.json())
-app.options('*', cors({
-    origin: process.env.FRONTEND_URL || 'https://blog-fornt.netlify.app',
+app.use(cors({
+    origin: process.env.FRONTEND_URL,
     credentials: true
-}))
+}));
 
 
 // route setup  
