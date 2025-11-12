@@ -28,7 +28,7 @@ const BlogCard = ({ props }) => {
                     </div>
 
                     <div className='my-2'>
-                        <img src={props.featuredImage} className='rounded' />
+                        <img src={props.featuredImage}  className='rounded w-full h-64 object-contain'   />
                     </div>
                     <div>
                         <p className='flex items-center gap-2 mb-2'>
